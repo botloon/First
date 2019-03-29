@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
+        <module name="EurekaClient" />
+        <module name="EurekaServer" />
+        <module name="feign" />
+        <module name="hystrix" />
+        <module name="nativeConfigClient" />
+        <module name="nativeConfigServer" />
+        <module name="RestTemplate" />
+        <module name="ribbon" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configClient" target="1.8" />
+      <module name="lzy_springcloud" target="1.8" />
+      <module name="lzy_springcloud2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaClient" options="-parameters" />
+      <module name="EurekaServer" options="-parameters" />
+      <module name="RestTemplate" options="-parameters" />
+      <module name="configClient" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="lzy_springcloud" options="-parameters" />
+      <module name="lzy_springcloud2" options="-parameters" />
+      <module name="nativeConfigClient" options="-parameters" />
+      <module name="nativeConfigServer" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
